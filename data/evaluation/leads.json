@@ -1,0 +1,192 @@
+[
+  {
+    "lead": {
+      "lead_id": "eval-001",
+      "company_name": "Axon Analytics",
+      "contact_name": "Sarah Chen",
+      "contact_email": "schen@axonanalytics.io",
+      "contact_title": "VP of Engineering",
+      "company_website": null,
+      "industry": "B2B SaaS",
+      "company_size_hint": "150-300 employees",
+      "initial_message": "We're struggling with our data pipeline reliability. Our current solution breaks every time we scale. We need something enterprise-grade within the next quarter. We have budget approved for Q1."
+    },
+    "ground_truth": {
+      "is_qualified": true,
+      "expected_score_range": [70, 100],
+      "outreach_must_contain": ["data pipeline", "scale"],
+      "notes": "Clear budget, Q1 timeline, explicit pain point, VP-level authority. High BANT score expected."
+    }
+  },
+  {
+    "lead": {
+      "lead_id": "eval-002",
+      "company_name": "Blossom Coffee Co.",
+      "contact_name": "Mike Torres",
+      "contact_email": "mike@blossomcoffee.com",
+      "contact_title": "Marketing Coordinator",
+      "company_website": null,
+      "industry": "Food & Beverage",
+      "company_size_hint": "10-20 employees",
+      "initial_message": "Hi, I was curious about your product. Can you send me some info?"
+    },
+    "ground_truth": {
+      "is_qualified": false,
+      "expected_score_range": [0, 40],
+      "outreach_must_contain": [],
+      "notes": "Consumer brand, low authority, vague interest, no budget or timeline signal. Not a B2B fit."
+    }
+  },
+  {
+    "lead": {
+      "lead_id": "eval-003",
+      "company_name": "Meridian Health Systems",
+      "contact_name": "Dr. James Patel",
+      "contact_email": "jpatel@meridianhealth.org",
+      "contact_title": "Chief Technology Officer",
+      "company_website": null,
+      "industry": "Healthcare Technology",
+      "company_size_hint": "2000-5000 employees",
+      "initial_message": "We are evaluating vendors for our patient data integration project. RFP closes March 15th. Our board has approved a $2M budget for digital transformation this fiscal year."
+    },
+    "ground_truth": {
+      "is_qualified": true,
+      "expected_score_range": [80, 100],
+      "outreach_must_contain": ["patient data", "digital transformation"],
+      "notes": "C-level, explicit $2M budget, hard RFP deadline, large enterprise. Should be deep model escalation."
+    }
+  },
+  {
+    "lead": {
+      "lead_id": "eval-004",
+      "company_name": "NovaSpark Studios",
+      "contact_name": "Alex Rivera",
+      "contact_email": "alex@novaspark.io",
+      "contact_title": "Lead Developer",
+      "company_website": null,
+      "industry": "Gaming",
+      "company_size_hint": "5-15 employees",
+      "initial_message": "We might need something like this eventually, but we're still in early stages. No timeline yet."
+    },
+    "ground_truth": {
+      "is_qualified": false,
+      "expected_score_range": [10, 40],
+      "outreach_must_contain": [],
+      "notes": "Early stage startup, no timeline, low authority, no budget signal. Low BANT across the board."
+    }
+  },
+  {
+    "lead": {
+      "lead_id": "eval-005",
+      "company_name": "Finledger Corp",
+      "contact_name": "Priya Sharma",
+      "contact_email": "priya.sharma@finledger.com",
+      "contact_title": "Director of Finance Operations",
+      "company_website": null,
+      "industry": "Financial Services",
+      "company_size_hint": "500-1000 employees",
+      "initial_message": "Our compliance audit flagged manual reconciliation as a critical risk. We need an automated solution deployed by end of Q2. Our CFO has signed off on the project."
+    },
+    "ground_truth": {
+      "is_qualified": true,
+      "expected_score_range": [70, 95],
+      "outreach_must_contain": ["compliance", "reconciliation"],
+      "notes": "CFO sign-off (budget), Director-level (authority), compliance risk (need), Q2 deadline (timeline). Strong BANT."
+    }
+  },
+  {
+    "lead": {
+      "lead_id": "eval-006",
+      "company_name": "CloudBurst DevOps",
+      "contact_name": "Tom Wallace",
+      "contact_email": "tom@cloudburstdevops.com",
+      "contact_title": "CEO",
+      "company_website": null,
+      "industry": "DevOps / Infrastructure",
+      "company_size_hint": "30-80 employees",
+      "initial_message": "We just raised our Series A. We're looking to replace our current CI/CD tooling and need something that can grow with us. Open to a conversation next week."
+    },
+    "ground_truth": {
+      "is_qualified": true,
+      "expected_score_range": [60, 85],
+      "outreach_must_contain": ["CI/CD", "Series A"],
+      "notes": "CEO authority, Series A budget, clear need, short timeline (next week). Solid mid-high score expected."
+    }
+  },
+  {
+    "lead": {
+      "lead_id": "eval-007",
+      "company_name": "Sunrise Yoga Studio",
+      "contact_name": "Linda Park",
+      "contact_email": "linda@sunriseyoga.com",
+      "contact_title": "Owner",
+      "company_website": null,
+      "industry": "Wellness / Consumer",
+      "company_size_hint": "2-5 employees",
+      "initial_message": "Do you have a solution for small businesses? We're looking for scheduling software."
+    },
+    "ground_truth": {
+      "is_qualified": false,
+      "expected_score_range": [0, 30],
+      "outreach_must_contain": [],
+      "notes": "Consumer/SMB, non-B2B use case, wrong industry, minimal budget capacity. Should be rejected quickly."
+    }
+  },
+  {
+    "lead": {
+      "lead_id": "eval-008",
+      "company_name": "Quantum Logistics Inc.",
+      "contact_name": "Robert Kim",
+      "contact_email": "rkim@quantumlogistics.com",
+      "contact_title": "SVP of Operations",
+      "company_website": null,
+      "industry": "Supply Chain & Logistics",
+      "company_size_hint": "1000-3000 employees",
+      "initial_message": "We're running into serious bottlenecks in our warehouse management. We've allocated $500K for supply chain tech this year and want to move fast — ideally pilot within 60 days."
+    },
+    "ground_truth": {
+      "is_qualified": true,
+      "expected_score_range": [75, 100],
+      "outreach_must_contain": ["warehouse", "supply chain"],
+      "notes": "SVP authority, explicit $500K budget, 60-day timeline, clear operational pain. Very strong qualification."
+    }
+  },
+  {
+    "lead": {
+      "lead_id": "eval-009",
+      "company_name": "TerraVerde Agriculture",
+      "contact_name": "Carlos Mendez",
+      "contact_email": "cmendez@terraverde.ag",
+      "contact_title": "IT Manager",
+      "company_website": null,
+      "industry": "Agriculture",
+      "company_size_hint": "100-200 employees",
+      "initial_message": "Our team has been talking about upgrading our systems. Nothing decided yet and our budget cycle starts next year."
+    },
+    "ground_truth": {
+      "is_qualified": false,
+      "expected_score_range": [15, 45],
+      "outreach_must_contain": [],
+      "notes": "IT Manager (mid authority), no current budget, no timeline this year. Borderline — should fail threshold."
+    }
+  },
+  {
+    "lead": {
+      "lead_id": "eval-010",
+      "company_name": "Lattice Cybersecurity",
+      "contact_name": "Dana Okafor",
+      "contact_email": "dokafor@latticecyber.com",
+      "contact_title": "CISO",
+      "company_website": null,
+      "industry": "Cybersecurity",
+      "company_size_hint": "200-500 employees",
+      "initial_message": "We had a near-breach incident last month. Our board is mandating a full security stack review. We have emergency budget unlocked — need vendors selected in 30 days."
+    },
+    "ground_truth": {
+      "is_qualified": true,
+      "expected_score_range": [85, 100],
+      "outreach_must_contain": ["security", "breach"],
+      "notes": "CISO + board mandate (authority), emergency budget (budget), near-breach pain (need), 30-day deadline (timeline). Near-perfect BANT."
+    }
+  }
+]
